@@ -1,0 +1,24 @@
+{
+  "name": "energy-tracker",
+  "version": "1.0.0",
+  "description": "In the future this gonna be a website (or a mobile app) focused on watch the best prices of energy drinks",
+  "homepage": "https://github.com/melqmarqs/energy-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/melqmarqs/energy-tracker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melqmarqs/energy-tracker.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
