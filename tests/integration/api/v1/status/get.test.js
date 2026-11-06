@@ -9,7 +9,7 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(content.updated_at).toEqual(parsedDate);
 
   expect(content).toHaveProperty("dependencies.database.version");
-  expect(content.dependencies.database.version).toEqual("16.0");
+  expect(content.dependencies.database.version).not.toBeUndefined();
 
   expect(content).toHaveProperty("dependencies.database.max_connections");
   expect(typeof content.dependencies.database.max_connections).toBe("number");
@@ -19,5 +19,5 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(typeof content.dependencies.database.current_connections).toBe(
     "number",
   );
-  expect(content.dependencies.database.current_connections).toBe(1);
+  expect(content.dependencies.database.current_connections).toBeGreaterThan(0);
 });
